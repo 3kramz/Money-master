@@ -20,48 +20,85 @@
         <div class="container px-4">
             <div class="row gx-5">
                 <div class="col col-lg-6">
-                    <img src="https://images.unsplash.com/photo-1443041630902-3ad09447e1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                    <img class="text-center" src="https://images.unsplash.com/photo-1443041630902-3ad09447e1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
                         alt="" srcset="">
                 </div>
-                <div class="col col-lg-6 bg-light">
+                <div class="col col-lg-6 bg-body">
+                    <!-- income -->
                     <div class="row gx-1 my-5">
-                        <h3 class="text-center mb-2">Income</h3>
-                        <div class="col col-lg-6">
-                            <h5 class="text-end ">Income:</h5>
+                        <h3 class="text-center  mb-2">Income</h3>
+                        <div class="col-3 pe-2  col-lg-6">
+                            <h5 class="text-end" >Income:</h5>
                         </div>
-                        <div class="col col-lg-6">
-                            <input type="text" class="form-control my-1">
+                        <div class="col-9 col-lg-6">
+                            <input type="text" id="incomeField" class="form-control my-1">
                         </div>
                     </div>
-                    <div class="row gx-1 my-5">
-                        <h3 class="text-center mb-5">Expenses</h3>
-                        <div class="col col-lg-6">
-                            <h5 class="text-end align-middle">Food:</h5>
+                    <!-- Expenses -->
+                    <div class="row gx-1 my-1 text-center">
+                        <h3 class="text-center  mb-5">Expenses</h3>
+                        <div class="col-3 pe-2  col-lg-6">
+                            <h5 class="text-end ">Food:</h5>
                         </div>
-                        <div class="col col-lg-6">
-                            <input type="text" class="form-control  my-1">
-                        </div>
-                        <div class="col col-lg-6">
-                            <h5 class="text-end align-middle">Rent:</h5>
-                        </div>
-                        <div class="col col-lg-6">
-                            <input type="text" class="form-control  my-1">
-                        </div>
-                        <div class="col col-lg-6">
-                            <h5 class="text-end align-middle">Clothes:</h5>
-                        </div>
-                        <div class="col col-lg-6">
-                            <input type="text" class="form-control  my-1 ">
+                        <div class="col-9 col-lg-6">
+                            <input type="text"id="foodField" class="form-control my-1">
                         </div>
                     </div>
+
+                    <div class="row gx-1 my-1  text-center">
+                        <div class="col-3 pe-2  col-lg-6">
+                            <h5 class="text-end ">Clothes:</h5>
+                        </div>
+                        <div class="col-9 col-lg-6">
+                            <input type="text" id="clothField" class="form-control my-1">
+                        </div>
+                    </div>
+
+                    <div class="row gx-1 my-1  text-center">
+                        <div class="col-3 pe-2  col-lg-6">
+                            <h5 class="text-end ">Rent:</h5>
+                        </div>
+                        <div class="col-9 col-lg-6">
+                            <input type="text"id="rentField" class="form-control my-1">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button id="calculateBtn" class="btn btn-primary px-5 py-2">Calculate</button>
+                    </div>
+                    <!-- Calculation -->
+                    <div class="text-center my-3">
+                        <h3 class="fw-bold m-3">Total Expenses :<span id="totalExpenses">00</span></h3>
+                        <h3 class="fw-bold m-3">Balance :<span id="totalBalance">00</span></h3>
+
+                    </div>
+                    <div class="row gx-1 my-1 align-middle">
+                        <div class=" d-flex gx-3">
+                            <p class="text-end px-3 ">Save:</p>
+                        
+                            <input type="text"id="saveField" class="form-control my-1 px-3">
+
+                            <p class="text-end px-3">%</p>
+
+                            <button id="saveBtn" class="btn btn-primary px-5 py-2 mx-3">Save</button>
+                        </div>
+                        
+                    </div>
+                    <div class="text-center my-3">
+                            <h3 class="fw-bold m-3">Saving Amount: <span id="savingAmount">00</span></h3>
+                            <h3 class="fw-bold m-3">Remaining Balance :<span id="remainingBalance">00</span></h3>
+    
+                        </div>
+
+
+
                 </div>
             </div>
         </div>
-    
+
     </main>
-    
-    
-    
+
+
+
     <!-- javascrip -->
     <script src="./js /javascript.js"></script>
     <!-- Bootsrap -->
