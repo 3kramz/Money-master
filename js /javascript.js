@@ -1,4 +1,4 @@
-
+// functions
 function fieldValue(field) {
     const inputedvalue = parseFloat(document.getElementById(field).value)
 
@@ -16,7 +16,7 @@ function resetValue() {
     document.getElementById("rentField").value = ""
     document.getElementById("saveField").value = ""
 }
-
+// event handlers
 document.getElementById("calculateBtn").addEventListener("click", function () {
 
     const incomeField = fieldValue("incomeField")

@@ -8,6 +8,8 @@
     <!-- Bootsrtap style -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/style.css">
+
     <title>Savings</title>
 </head>
 
@@ -19,24 +21,24 @@
     <main>
         <div class="container px-4">
             <div class="row gx-5">
-                <div class="col col-lg-6">
-                    <img class="text-center" src="https://images.unsplash.com/photo-1443041630902-3ad09447e1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+                <div class="col col-lg-6 flex" >
+                    <img class="flex" src="https://images.unsplash.com/photo-1443041630902-3ad09447e1a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
                         alt="" srcset="">
                 </div>
-                <div class="col col-lg-6 bg-body">
+                <div class="col col-lg-6 ">
                     <!-- income -->
-                    <div class="row gx-1 my-5">
-                        <h3 class="text-center  mb-2">Income</h3>
-                        <div class="col-3 pe-2  col-lg-6">
-                            <h5 class="text-end" >Income:</h5>
+                    <div class="row gx-1 my-1">
+                        <h3 class="text-center  mb-2 mt-4">Income</h3>
+                        <div class="col-3 pe-2  col-lg-6 flex">
+                            <h5 class="text-end " >Income:</h5>
                         </div>
                         <div class="col-9 col-lg-6">
                             <input type="text" id="incomeField" class="form-control my-1">
                         </div>
                     </div>
                     <!-- Expenses -->
-                    <div class="row gx-1 my-1 text-center">
-                        <h3 class="text-center  mb-5">Expenses</h3>
+                    <div class="row gx-1 my-1 flex">
+                        <h3 class="text-center mb-2 mt-4">Expenses</h3>
                         <div class="col-3 pe-2  col-lg-6">
                             <h5 class="text-end ">Food:</h5>
                         </div>
@@ -45,7 +47,7 @@
                         </div>
                     </div>
 
-                    <div class="row gx-1 my-1  text-center">
+                    <div class="row gx-1 my-1  flex">
                         <div class="col-3 pe-2  col-lg-6">
                             <h5 class="text-end ">Clothes:</h5>
                         </div>
@@ -54,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="row gx-1 my-1  text-center">
+                    <div class="row gx-1 my-1  flex">
                         <div class="col-3 pe-2  col-lg-6">
                             <h5 class="text-end ">Rent:</h5>
                         </div>
@@ -63,7 +65,7 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button id="calculateBtn" class="btn btn-primary px-5 py-2">Calculate</button>
+                        <button id="calculateBtn" class="btn btn-primary  my-2 px-5 py-2">Calculate</button>
                     </div>
                     <!-- Calculation -->
                     <div class="text-center my-3">
@@ -72,14 +74,14 @@
 
                     </div>
                     <div class="row gx-1 my-1 align-middle">
-                        <div class=" d-flex gx-3">
+                        <div class=" flex ">
                             <p class="text-end px-3 ">Save:</p>
                         
                             <input type="text"id="saveField" class="form-control my-1 px-3">
 
                             <p class="text-end px-3">%</p>
 
-                            <button id="saveBtn" class="btn btn-primary px-5 py-2 mx-3">Save</button>
+                            <button id="saveBtn" class="btn btn-primary px-5 py-2 my-2 mx-3">Save</button>
                         </div>
                         
                     </div>
