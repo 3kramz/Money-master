@@ -43,3 +43,19 @@ document.getElementById("calculateBtn").addEventListener("click", function () {
 
     resetValue()
 })
+
+document.getElementById("saveBtn").addEventListener("click",function(){
+
+    const saveField = fieldValue("saveField")
+    const Balance = parseFloat(document.getElementById("totalBalance").innerText)
+
+if(Balance>0){
+    const parcentage=saveField/100
+    const saved=Balance*parcentage
+    document.getElementById("savingAmount").innerText=saved
+    document.getElementById("remainingBalance").innerText=Balance-saved
+}else{
+    alert("you dont have enough money to save for future")
+}
+resetValue()
+})
